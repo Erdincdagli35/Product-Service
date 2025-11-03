@@ -2,11 +2,9 @@ package com.edsoft.order_service.controller;
 
 import com.edsoft.order_service.model.Order;
 import com.edsoft.order_service.service.OrderService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -32,7 +30,7 @@ public class OrderController {
         return ResponseEntity.ok(orderService.listAllOrders());
     }
 
-    @GetMapping("/admin")
+    @GetMapping("")
     public List<Order> allOrders() {
         return orderService.listAllOrders();
     }

@@ -13,6 +13,7 @@ public class Order {
 
     public Order(Long id, String username, List<OrderItem> items, String status, Instant createdAt) {
         this.id = id;
+        this.customerUsername =username;
         this.items = items;
         this.status = status;
         this.createdAt = createdAt;
