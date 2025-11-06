@@ -21,7 +21,7 @@ public class SecurityConfig {
                 .and()
                 .csrf().disable()
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/**").permitAll() // gerekirse özelleştir
+                        .requestMatchers("/api/**").permitAll()
                         .anyRequest().authenticated()
                 );
 
@@ -31,7 +31,7 @@ public class SecurityConfig {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("https://beachorder.up.railway.app")); // frontend URL
+        config.setAllowedOrigins(List.of("https://beachorder.up.railway.app"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
