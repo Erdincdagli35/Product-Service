@@ -14,5 +14,6 @@ public enum Category {
     Burger,
 
     Coffee,
-    HotDrink
+    HotDrink,
+    SoftDrink
 }
