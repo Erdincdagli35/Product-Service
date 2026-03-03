@@ -108,6 +108,12 @@ public class DataLoader {
                 productList.add(new Product(null, "Çay", "Demleme siyah çay", 50.0,Category.HotDrink));
                 productList.add(new Product(null, "Türk Kahvesi", "Klasik Türk kahvesi", 100.0,Category.HotDrink));
 
+                // 🍵 Soğuk İçecekler
+                productList.add(new Product(null, "Cola", "", 150.0,Category.SoftDrink));
+                productList.add(new Product(null, "Fanta", "", 150.0,Category.SoftDrink));
+                productList.add(new Product(null, "Sprite", "", 150.0,Category.SoftDrink));
+                productList.add(new Product(null, "Cappy", "", 150.0,Category.SoftDrink));
+                
                 pr.saveAll(productList);
             }
         };
