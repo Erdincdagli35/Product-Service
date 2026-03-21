@@ -12,6 +12,7 @@ public enum Category {
     Meal,
     Snack,
     Burger,
+    Pasta,
 
     Coffee,
     HotDrink,
