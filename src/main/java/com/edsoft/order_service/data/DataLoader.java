@@ -91,6 +91,8 @@ public class DataLoader {
                 productList.add(new Product(null, "Cheeseburger", "Dana burger ve cheddar peyniri", 750.0,Category.Burger));
                 productList.add(new Product(null, "Hamburger", "Klasik dana burger", 550.0,Category.Burger));
 
+                productList.add(new Product(null, "Makarna", "Sade Makarna", 550.0,Category.Pasta));
+
                 // ☕ Kahveler
                 productList.add(new Product(null, "Americano", "Sıcak espresso ve su karışımı", 130.0,Category.Coffee));
                 productList.add(new Product(null, "Café Crema", "Yoğun kremalı kahve", 150.0,Category.Coffee));
@@ -113,6 +115,7 @@ public class DataLoader {
                 productList.add(new Product(null, "Fanta", "", 150.0,Category.SoftDrink));
                 productList.add(new Product(null, "Sprite", "", 150.0,Category.SoftDrink));
                 productList.add(new Product(null, "Cappy", "", 150.0,Category.SoftDrink));
+                productList.add(new Product(null, "Su", "", 50.0,Category.SoftDrink));
                 
                 pr.saveAll(productList);
             }
