@@ -7,12 +7,16 @@ public enum Category {
     Raki,
     Wine,
     Whiskey,
-    Votka,
+    Vodka,
+    Liquor,
 
     Meal,
     Snack,
     Burger,
     Pasta,
+    Salad,
+    Appetizer,
+    Fruit,
 
     Coffee,
     HotDrink,
